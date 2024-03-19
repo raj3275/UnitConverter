@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment#2 for Raj Patel</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            background-color: darkolivegreen;
+            color: tomato;
+            border: solid black;
+            margin-bottom: 15px;            
+        }
+        input{
+            margin: 3px;
+        }
+        form{
+            border: solid gray;
+            background-color: antiquewhite;
+        }
+        button{
+            margin: 5px;
+        }        
+    </style>
+</head>
+<body>
+    <h1>SYST 10199<br>
+        Assignment 2 <br>
+        Raj Patel
+    </h1>
+    <form>
+        <h2>Unit Converter</h2>
+        <input type="text" id="value"><br><br>
+        <div class="buttons">
+            <input type="button" onclick="otm()" value="ounce to milliliter">
+            <input type="button" onclick="mto()" value="milliliter to ounce">
+            <input type="button" onclick="ltm()" value="liter to milliliter">
+            <input type="button" onclick="mtl()" value="milliliter to liter">
+            <input type="button" onclick="itc()" value="inches to centimeters">
+            <input type="button" onclick="cti()" value="centimeters to inches">
+            <input type="button" onclick="ptk()" value="pounds to kilograms">
+            <input type="button" onclick="ktp()" value="kilograms to pounds">
+            
+            <p id="answer"></p>
+        </div>
+        <button type="reset" onclick="getFocus()">Clear</button>
+        <script src="_Jscripts/unitconversion.js"></script>
+    </form>
+</body>
+</html>
